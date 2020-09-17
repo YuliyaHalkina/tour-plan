@@ -13,6 +13,10 @@ body {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -367,6 +371,10 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar-top__menu-btn {
+  display: none;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
@@ -474,6 +482,9 @@ template {
   .container {
     max-width: 700px;
   }
+  .logo {
+    width: 132px;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -489,6 +500,9 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .search__input {
+    width: 340px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -496,9 +510,40 @@ template {
     max-width: 676px;
     width: 92%;
   }
+  .navbar-menu, .navbar__search, .navbar__user {
+    display: none;
+  }
+  .menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    border: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
+  }
+  .menu-btn__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
+  }
   .container {
     max-width: 676px;
     width: 92%;
