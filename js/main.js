@@ -29,9 +29,9 @@ function swipe(e) {
     if (e.key == "ArrowRight") {
         hotelSlider.slideNext();
     }
-    
 };
 
+$('.newsletter').parallax({imageSrc: '../img/newsletter-bg.jpg', speed: 0.2});
 
 
 
