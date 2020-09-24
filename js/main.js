@@ -31,7 +31,7 @@ function swipe(e) {
     }
 };
 
-$('.newsletter').parallax({imageSrc: '../img/newsletter-bg.jpg', speed: 0.2});
+$('.newsletter').parallax({imageSrc: './img/newsletter-bg.jpg', speed: 0.2});
 
 
 

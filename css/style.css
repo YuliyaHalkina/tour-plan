@@ -23,6 +23,12 @@ button {
   cursor: pointer;
 }
 
+iframe {
+  frameborder: 0;
+  width: 100%;
+  height: 100%;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -860,6 +866,9 @@ template {
   right: 0;
   top: 0;
   background-color: #EC1F46;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
   min-width: 65px;
   max-width: 50%;
   height: 100%;
@@ -886,6 +895,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 70px;
 }
 
 .reviews-slider__avatar {
@@ -1061,6 +1071,11 @@ template {
   .map {
     width: 340px;
   }
+  .reviews__title {
+    margin-bottom: 70px;
+    font-size: 30px;
+    line-height: 38px;
+  }
   .reviews-slider__item {
     max-width: 580px;
     padding: 0 62px 30px;
@@ -1212,11 +1227,20 @@ template {
   .subscribe {
     width: 100%;
   }
+  .reviews-slider__text {
+    text-align: left;
+  }
   .newsletter {
     padding: 76px 0 83px 0;
   }
   .newsletter-title {
     margin-bottom: 37px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
   }
 }
 /*# sourceMappingURL=style.css.map */
