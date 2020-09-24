@@ -16,7 +16,7 @@
                     <img src="img/logo.svg" alt="Logo: Best Tour Plan" class="logo__img">
                 </a>
 
-                <form action="" class="search navbar__search">
+                <form action="get" class="search navbar__search">
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="img/search.svg" alt="Icon: search">
@@ -99,7 +99,7 @@
             <div class="hotel-grid">
                 <div class="slider">
                     <!-- Slider main container -->
-                    <div class="swiper-container">
+                    <div class="swiper-container hotel-slider">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
@@ -162,12 +162,122 @@
                     <!-- /.booking -->
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6371451.900787557!2d15.910583748722319!3d42.6094086782353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f95aef5e17af993!2sHilton%20Sorrento%20Palace!5e0!3m2!1sru!2sby!4v1600784688080!5m2!1sru!2sby" 
-                        width="100%" height="213" frameborder="0" style="border:0;border-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        width="100%" height="100%" frameborder="0" style="border:0;border-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                     <!-- /.map -->
                 </div>
             </div>
             <!-- /.hotel-grid -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="newsletter">
+        <div class="newsletter-wrapper">
+            <h2 class="newsletter-title">
+                subscribe to our
+                <span class="newsletter-title__strong">Newsletter</span>
+            </h2>
+            <form action="get" class="subscribe newsletter__subscribe">
+                <input type="text" class="subscribe__input" placeholder="Your email address">
+                <button class="subscribe__button">Send</button>
+            </form>
+        </div>
+        <!-- /.newsletter-wrapper -->
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class="reviews__title">What people thinks about us</h2>
+            <div class="swiper-container reviews-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="img/review-avatar.jpg" alt="Photo Megan Fox" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Megan Fox</h3>
+                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                <div class="stars">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                </div>
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                It was very nice hotel with cleanliness. Staff behavior was good and polite. 
+                                They welcome us very well. Issue was only that Lift was not in working and 
+                                we were allotted to 3rd floor and amenities articles were in corner of gallery 
+                                which were giving bad feeling. Breakfast was good and support of the staff was 
+                                also very nice. Location is not good as per atmosphere, it is very nearby most 
+                                of the popular places but self location in a narrow street is not good. Overall 
+                                it was a good experience and could recommend. 
+                            </p>
+                            <!-- /.reviews-slider__text -->
+                        </div>
+                        <!-- /.reviews-slider__item -->
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="img/review-avatar1.jpg" alt="Photo Mabel" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Mabel</h3>
+                                <span class="reviews-slider__date">Stayed 1 July, 2019</span>
+                                <div class="stars">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                </div>
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                It was very nice hotel with cleanliness. Staff behavior was good and polite. 
+                                They welcome us very well. Issue was only that Lift was not in working and 
+                                we were allotted to 3rd floor and amenities articles were in corner of gallery 
+                                which were giving bad feeling. Breakfast was good and support of the staff was 
+                                also very nice. Location is not good as per atmosphere, it is very nearby most 
+                                of the popular places but self location in a narrow street is not good. Overall 
+                                it was a good experience and could recommend. 
+                            </p>
+                            <!-- /.reviews-slider__text -->
+                        </div>
+                        <!-- /.reviews-slider__item -->
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="img/review-avatar2.jpg" alt="Photo OMON" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">OMONovez</h3>
+                                <span class="reviews-slider__date">Stayed 23 Sep, 2020</span>
+                                <div class="stars">
+                                    <img src="img/star.svg" alt="Star" class="star">
+                                </div>
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                Worst hotel ive stayed in. - The lock housing was exposed meaning it wasnt difficult 
+                                to break into our room. - No safety deposit boxes in rooms. - Hot water constantly 
+                                running out. - No ventilation in bathroom (No window or extractor fan) leaving the 
+                                bathroom misty after taking a shower and leaving it smelly after using the loo. - 
+                                Virtually no cooking utensils, making a basic task such as hard boiling an egg extremely difficult. 
+                                No sponge to clean any dishes. - Beds were extremely uncomfortable, may as well of slept on their sun loungers. 
+                            </p>
+                            <!-- /.reviews-slider__text -->
+                        </div>
+                        <!-- /.reviews-slider__item -->
+                    </div>
+                    <!-- /.swiper-slide -->
+                </div>
+                <!-- If we need navigation buttons -->
+                <button class="reviews-slider__button reviews-slider__button--prev"></button>
+                <button class="reviews-slider__button reviews-slider__button--next"></button>
+            </div>
         </div>
         <!-- /.container -->
     </section>
