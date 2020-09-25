@@ -9,7 +9,10 @@
                 height: 100%
                 width: 100%
                 object-fit: cover
-
+    .activities
+        &-item
+            width: 230px
+            height: 230px
 @media (max-width: 992px)
     .newsletter-wrapper,
     .container
@@ -45,13 +48,20 @@
         width: 340px
     .reviews
         &__title
-            margin-bottom: 70px
+            margin-bottom: 50px
             font-size: 30px
             line-height: 38px
         &-slider
             &__item
                 max-width: 580px
                 padding: 0 62px 30px
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+        &-item
+            width: 340px
+            height: 255px
+            margin-bottom: 20px
 @media (max-width: 768px)
     .container
         max-width: 676px
@@ -103,6 +113,13 @@
         width: 100%
     .map
         width: 100%
+    .activities
+        padding-bottom: 70px
+        &__title
+            margin-top: 50px
+        &-item
+            width: 49%
+            height: 255px
     .newsletter
         &-wrapper
             flex-direction: column
@@ -149,6 +166,15 @@
             height: 403px
     .subscribe
         width: 100%
+    .activities
+        padding-bottom: 60px
+        &__title
+            margin-bottom: 36px
+            margin-top: 20px
+            font-size: 18px
+            line-height: 23px
+        &-item
+            width: 100%
     .reviews
         &-slider
             &__text
