@@ -24,6 +24,10 @@
         justify-content: space-between
         background-color: $dark
         padding: 31px 0
+        &__item
+            &--mobile
+                &_visible
+                    display: none
         &__link
             color: inherit
             text-decoration: none
@@ -70,5 +74,9 @@
         font-size: 14px
         line-height: 18px
         color: $text-color
-
+.navbar 
+    &__search, &__user
+        &--mobile
+            &_visible
+                display: none
         

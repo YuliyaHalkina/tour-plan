@@ -33,6 +33,10 @@ function swipe(e) {
 
 $('.newsletter').parallax({imageSrc: './img/newsletter-bg.jpg', speed: 0.2});
 
+var menuButton = document.querySelector('.menu-btn');
+menuButton.addEventListener('click', function () {
+    document.querySelector(".navbar-bottom").classList.toggle('navbar-bottom--visible');
+});
 
 
   
