@@ -1137,6 +1137,7 @@ template {
           align-items: start;
   grid-auto-rows: minmax(40px, -webkit-min-content);
   grid-auto-rows: minmax(40px, min-content);
+  grid-row-gap: 60px;
 }
 
 .footer__ul {
@@ -1328,6 +1329,10 @@ template {
       grid-row-start: 4;
 }
 
+.contact-details__title {
+  margin-bottom: 26px;
+}
+
 .contact-form {
   grid-column: span 2;
   -ms-grid-row: 4;
@@ -1437,6 +1442,17 @@ template {
   text-align: center;
 }
 
+.modal__title--mt-0 {
+  margin-top: 0;
+}
+
+.modal__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .modal__button-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -1488,9 +1504,9 @@ template {
     grid-row: 2;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-left: 18px;
   }
   .additional-info {
-    margin-left: 18px;
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2/4;
@@ -1559,6 +1575,9 @@ template {
   }
   .widget {
     margin-top: 23px;
+  }
+  .contact-details {
+    margin-top: 26px;
   }
   .navbar-top {
     padding-top: 30px;
