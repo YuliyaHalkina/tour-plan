@@ -9,7 +9,6 @@
         grid-gap: 20px
         align-items: start
         grid-auto-rows: minmax(40px, min-content)
-        grid-row-gap: 60px
     &__ul
         padding: 0
         margin: 0
@@ -64,10 +63,12 @@
         grid-row: 1 / 3
         align-self: center
     &__input
-        margin-bottom: 15px
-        flex-basis: 48%
+        width: 100%
         font-size: 12px
         line-height: 15px
+        &-group
+            margin-bottom: 15px
+            flex-basis: 48%
     &__form
         display: flex
         align-items: center
@@ -109,9 +110,12 @@
 .categories
     grid-column-start: 2
     grid-row: 1 / 4
+.additional-info
+    grid-column-start: 3
+    grid-row-start: 1 
 .social-network
     grid-column: span 2
-    grid-row-start: 2
+    grid-row-start: 2 
 .contact-details
     grid-column: span 2
     grid-row-start: 4

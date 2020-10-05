@@ -46,6 +46,12 @@ input {
   min-height: 50px;
 }
 
+.invalid {
+  color: red;
+  font-size: 12px;
+  position: relative;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -1137,7 +1143,6 @@ template {
           align-items: start;
   grid-auto-rows: minmax(40px, -webkit-min-content);
   grid-auto-rows: minmax(40px, min-content);
-  grid-row-gap: 60px;
 }
 
 .footer__ul {
@@ -1227,11 +1232,15 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .footer__form {
@@ -1315,6 +1324,13 @@ template {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
+}
+
+.additional-info {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
 }
 
 .social-network {
@@ -1410,7 +1426,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__textarea {
@@ -1423,6 +1439,7 @@ template {
   width: 100%;
   min-height: 123px;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1438,7 +1455,6 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -1483,7 +1499,7 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1577,7 +1593,7 @@ template {
     margin-top: 23px;
   }
   .contact-details {
-    margin-top: 26px;
+    margin-top: 21px;
   }
   .navbar-top {
     padding-top: 30px;
@@ -1829,7 +1845,7 @@ template {
   .reviews-slider__item:before, .reviews-slider__item:after {
     display: none;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1900,6 +1916,9 @@ template {
             order: -1;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .footer__textarea {
     margin-bottom: 15px;
   }
   .footer__button-wrapper {

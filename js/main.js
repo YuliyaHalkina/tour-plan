@@ -59,4 +59,26 @@ $(document).ready(function() {
             closeModal(e);
         }
     };
+
+    $(".form").each(function() {
+        $(this).validate({
+            errorClass: "invalid",
+            messages: {
+                name: {
+                    required: "Enter your name",
+                    minlength: "Name should have at least 2 letters"
+                },
+                email: {
+                required: "Email is reqiured",
+                email: "Your email address must be in the format of name@domain.com"
+                },
+                phone: {
+                    required: "We need your phone to contact you"
+                }
+            }
+        });
+    });
+    $('.phone').each(function() {
+        $(this).mask('+7 (000) 000-00-00');
+    });
 });
